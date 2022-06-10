@@ -27,7 +27,7 @@ from sklearn.model_selection import *
 
 #model_st = pickle.load(open('model.pkl', 'rb'))
 
-warnings.filterwarnings("ignore")
+#warnings.filterwarnings("ignore")
 
 
 
