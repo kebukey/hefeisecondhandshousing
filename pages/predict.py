@@ -10,11 +10,7 @@ import sys
 
 import math
 
-from sklearn.metrics import *
-from sklearn.linear_model import *
-from sklearn.neighbors import *
-from sklearn.svm import *
-from sklearn.neural_network import *
+
 from sklearn.tree import *
 from sklearn.ensemble import *
 from xgboost import *
@@ -35,15 +31,7 @@ warnings.filterwarnings("ignore")
 
 
 
-def evaluation(model):
-    ypred = model.predict(x_test)
-    mae = mean_absolute_error(y_test, ypred)
-    mse = mean_squared_error(y_test, ypred)
-    rmse = math.sqrt(mse)
-    print("MAE: %.2f" % mae)
-    print("MSE: %.2f" % mse)
-    print("RMSE: %.2f" % rmse)
-    return ypred
+
 data1 = pd.read_csv('train2.csv', na_values=np.nan)
 
 # 将数据划分输入和结果集
